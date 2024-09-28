@@ -38,10 +38,10 @@ function check() {
     
     grid.forEach((e, i) => {
         let first = e.firstChild
-        if (first.classList.contains("x")) {
+        if (first && first.classList.contains("x")) {
             arrX.push(i)
         } 
-        else if(first.classList.contains("o")) {
+        else if(first && first.classList.contains("o")) {
             arrO.push(i)
         }
     })
