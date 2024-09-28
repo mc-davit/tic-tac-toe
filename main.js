@@ -28,8 +28,8 @@ function show() {
     }
     this.removeEventListener("click", show);
     this.style.cursor = "auto";
-    check();
     counter++;
+    check();
 }
 
 function check() {
@@ -55,6 +55,11 @@ function check() {
         row.innerHTML += `<p class="again">Wanna Play Again?</p>`
         disable();
         button.addEventListener("click", reset);
+    } else if (counter == 10) {
+    row.innerHTML += `<p class="draw">The Game Is A Draw</p>`
+    row.innerHTML += `<p class="again">Wanna Play Again?</p>`
+    disable();
+    button.addEventListener("click", reset);
     }
 }
 function checkWin(arg) {
@@ -63,12 +68,6 @@ function checkWin(arg) {
         let win = combo.split(',').map(Number);
         return win.every(n => arg.includes(n));
     });
-}
-if (counter == 10) {
-    row.innerHTML += `<p class="draw">The Game Is A Draw</p>`
-    row.innerHTML += `<p class="again">Wanna Play Again?</p>`
-    disable();
-    button.addEventListener("click", reset);
 }
 function disable() {
     grid.forEach(e => {
