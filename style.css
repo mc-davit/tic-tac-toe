@@ -31,11 +31,10 @@ article {
     justify-content: center;
     width: 100%;
     cursor: pointer;
-
-    i{
-        font-size: 100px;
-        padding: 15px;
-    }
+}
+.col i{
+    font-size: 100px;
+    padding: 15px;
 }
 
 .col3 {
@@ -65,8 +64,7 @@ article {
 
 .wins {
     position: absolute;
-    left: 67%;
-    top: 370px;
+    transform: translate(480px, 110px);
     display: flex;
     justify-content: space-between;
     align-items: center;
