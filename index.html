@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <article>
         <div class="row">
-            <div class="col"><div class=""></div></div>
-            <div class="col"><div class=""></div></div>
-            <div class="col col3"><div class=""></div></div>
-            <div class="col"><div class=""></div></div>
-            <div class="col"><div class=""></div></div>
-            <div class="col col3"><div class=""></div></div>
-            <div class="col row3"><div class=""></div></div>
-            <div class="col row3"><div class=""></div></div>
-            <div class="col col3 row3"><div class=""></div></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col col3"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col col3"></div>
+            <div class="col row3"></div>
+            <div class="col row3"></div>
+            <div class="col col3 row3"></div>
         </div>
-        <button>Restart</button>
+        <button id="restart">Restart</button>
+        <button id="reset">Reset</button>
+        <div class="wins">
+            <span id="x-wins">X: <span id="x-count">0</span></span>
+            <span id="o-wins">O: <span id="o-count">0</span></span>
+        </div>
     </article>
     <script src="main.js"></script>
 </body>
